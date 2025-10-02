@@ -1,0 +1,19 @@
+title: "My Lanyon Blog"
+email: "you@example.com"
+description: "Content-first Lanyon blog"
+
+# baseurl:
+# - USER site (https://USERNAME.github.io) => baseurl: ""
+# - PROJECT site (https://USERNAME.github.io/REPO) => baseurl: "/REPO"
+baseurl: ""
+url: ""
+
+# Use the Lanyon repo as a remote_theme (pin a commit or tag if desired)
+remote_theme: poole/lanyon   # or use a pinned ref if provided: poole/lanyon@vX.Y.Z
+
+# make sure plugin is declared to preview remote_theme locally
+plugins:
+  - jekyll-remote-theme
+
+# excerpt separator so you can use <!--more--> in posts
+excerpt_separator: "<!--more-->"

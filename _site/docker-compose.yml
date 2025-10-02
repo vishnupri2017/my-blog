@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  jekyll:
+    build: .
+    container_name: lanyon-site
+    command: bundle exec jekyll serve --host 0.0.0.0 --livereload --force_polling
+    ports:
+      - "4000:4000" # local access
+      - "35729:35729" # live reload
+    volumes:
+      - .:/usr/src/app
+      - bundle:/usr/local/bundle
+
+volumes:
+  bundle:
